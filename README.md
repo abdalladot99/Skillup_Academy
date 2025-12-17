@@ -121,5 +121,5 @@ dotnet run --project src/Your.Presentation/Your.Presentation.csproj
 
 ## 📬 Contact / Author
 
-**Author:** Abdalla mohammed — `<abdallagoda99@gmail.com>`
+**Author:** Abdalla mohammed
  
