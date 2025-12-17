@@ -74,7 +74,7 @@ Database (SQL Server)
 1. Clone repo
 
 ```bash
-git clone https://github.com/<your-username>/bedaya-learning-platform.git
+git clone https://github.com/abdalladot99/Skillup_Academy.git
 cd bedaya-learning-platform
 ```
 
