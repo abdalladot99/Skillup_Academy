@@ -39,6 +39,7 @@ Database (SQL Server)
 
 ### Layers — Responsibilities
 
+---
 * **Presentation Layer**
 
   * MVC Controllers, Views, ViewModels
@@ -90,8 +91,9 @@ dotnet ef database update --project src/Your.DAL/Your.DAL.csproj --startup-proje
 ```bash
 dotnet run --project src/Your.Presentation/Your.Presentation.csproj
 ```
-🔐 Configuration (Important)
+##🔐 Configuration (Important)
 
+---
 appsettings.json and appsettings.Development.json are not included in the repository for security reasons.
 
 You must create them manually before running the project.
