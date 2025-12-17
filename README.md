@@ -90,7 +90,66 @@ dotnet ef database update --project src/Your.DAL/Your.DAL.csproj --startup-proje
 ```bash
 dotnet run --project src/Your.Presentation/Your.Presentation.csproj
 ```
+🔐 Configuration (Important)
 
+appsettings.json and appsettings.Development.json are not included in the repository for security reasons.
+
+You must create them manually before running the project.
+
+📄 Create appsettings.Development.json
+
+Inside the Presentation (MVC) project, create:
+
+appsettings.Development.json
+
+
+Then add:
+
+{
+  "PaymobSettings": {
+    "ApiKey": "YOUR_PAYMOB_API_KEY",
+    "IframeId": "YOUR_IFRAME_ID",
+    "IntegrationId": "YOUR_INTEGRATION_ID",
+    "BaseUrl": "https://accept.paymob.com/api",
+    "Hmac": "YOUR_PAYMOB_HMAC"
+  },
+
+  "SMTP": {
+    "Host": "smtp.gmail.com",
+    "Port": "587",
+    "User": "YOUR_EMAIL@gmail.com",
+    "Pass": "YOUR_APP_PASSWORD",
+    "From": "Bedaya_Platform@gmail.com"
+  },
+
+  "ConnectionStrings": {
+    "cs": "Server=.;Database=BedayaDb;Trusted_Connection=True;TrustServerCertificate=True"
+  },
+
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+
+  "AllowedHosts": "*"
+}
+
+🧾 Configuration Sections
+PaymobSettings
+
+Payment gateway configuration
+
+SMTP
+
+Used for email confirmation & notifications
+
+Gmail requires App Password
+
+ConnectionStrings
+
+SQL Server database connection
 ---
 
 ## 🔌 Extensibility Points
